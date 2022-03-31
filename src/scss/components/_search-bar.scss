@@ -1,0 +1,23 @@
+.search-bar{
+    background-color: var(--secondary-bg);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    overflow: hidden;
+    &__input{
+        flex: 1 1 auto;
+        border: none;
+        padding: 5px 10px;
+        &:focus~.search-bar__btn{
+            background: var(--secondary-color);
+            .icon-search{
+                background: url('../img/icons.png') no-repeat -2666px 0;
+            }
+        }
+    }
+    &__btn{
+        background: var(--secondary-bg); 
+        padding: 1px 8px;
+    }
+}

@@ -16,3 +16,13 @@ $z-indexes: (
     }
     @return map-get($z-indexes, $layer);
 }
+
+:root{
+    --primary-color: #005ff9;
+    --primary-color-hover: #005bd1;
+    --secondary-color: #ff9e00;
+    --dark: #2c2d2e;
+    --gray: #919399;
+    --primary-bg: #f0f1f3;
+    --secondary-bg: #fff;
+}

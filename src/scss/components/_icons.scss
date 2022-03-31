@@ -1,0 +1,32 @@
+.icon{
+    &-category{
+        background: url('../img/icons.png') no-repeat -1954px 0;
+        width: 21px;
+        height: 21px;
+        background-size: 3379px 21px!important;
+    }
+    &-add{
+        background: url('../img/icons.png') no-repeat -31px 0;
+        width: 21px;
+        height: 21px;
+        background-size: 3379px 21px!important;
+    }
+    &-stats{
+        background: url('../img/icons.png') no-repeat -837px 0;
+        width: 21px;
+        height: 21px;
+        background-size: 3379px 21px!important;
+    }
+    &-bussiness{
+        background: url('../img/icon-bussiness.png');
+        width: 21px;
+        height: 21px;
+        background-size: 21px 21px!important;
+    }
+    &-search{
+        background: url('../img/icons.png') no-repeat -2759px 0;
+        width: 16px;
+        height: 16px;
+        background-size: 3379px 21px!important;
+    }
+}
