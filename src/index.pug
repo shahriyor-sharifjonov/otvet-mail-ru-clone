@@ -10,8 +10,25 @@ html(lang="en")
         .wrapper 
             include components/header 
             +header 
-            include components/main 
-            +main 
+            main.main 
+                .main__body.container
+                    include components/sidebar
+                    +sidebar 
+                    .content 
+                        .content__header 
+                            h2.content__subtitle Программирование 
+                            h1.content__title C/C++
+                            form(action="").content__search
+                                input(type="text" placeholder="Задайте свой вопрос здесь").content__search-input
+                                button(type="submit").content__search-btn Задать вопрос
+                            .content__filter 
+                                a(href="#!").content__filter-item Открытые 
+                                a(href="#!").content__filter-item На голосовании 
+                                a(href="#!").content__filter-item Лучшие
+                                a(href="#!").content__filter-item Решенные 
+                        .content__body 
+                    include components/banners 
+                    +banners 
             include components/footer 
             +footer 
         script(src="js/app.min.js") 

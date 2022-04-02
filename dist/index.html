@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220331213134">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220402000253">
     <title>Document</title>
   </head>
   <body> 
@@ -39,8 +39,13 @@
                 </div>
               </div>
               <div class="header__menu"> 
-                <div class="header__menu-body container"> <a class="header__menu-link" href="/">Все вопросы </a><a class="header__menu-link" href="/">Лидеры проекта</a>
-                  <p class="header__menu-title">Категории</p>
+                <div class="header__menu-body container"> <a class="header__menu-link" href="/">Все вопросы </a><a class="header__menu-link" href="/">Лидеры проекта </a>
+                  <p class="header__menu-title">Категории </p>
+                  <form class="header__menu-search" action=""> 
+                    <button class="header__menu-search-btn" type="submit">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M10.91 12.806A6.964 6.964 0 017 14c-3.863 0-7-3.137-7-7s3.137-7 7-7 7 3.137 7 7a6.97 6.97 0 01-1.18 3.889l2.114 2.113a1.354 1.354 0 01-1.914 1.914l-2.11-2.11zM7 2.477A4.524 4.524 0 0111.523 7 4.524 4.524 0 017 11.523 4.524 4.524 0 012.477 7 4.524 4.524 0 017 2.477z"></path></svg></button>
+                    <input class="header__menu-search-input" type="text" placeholder="Поиск категорий">
+                  </form>
                   <div class="header__accordion accordion"> 
                     <div class="accordion__button header__accordion-button"> 
                       <div class="header__accordion-button-left">
@@ -88,17 +93,34 @@
                 </div>
               </div>
             </header>
-            <main class="main"> 
-              <div class="main__body container">
-                <p>main </p>
-              </div>
-            </main>
+      <main class="main"> 
+        <div class="main__body container">
+                    <aside class="sidebar"> <a class="sidebar__title" href="#!">Программирование </a>
+                      <div class="sidebar__list"> <a class="sidebar__item" href="#!">Android </a><a class="sidebar__item active" href="#!">C/C++ </a><a class="sidebar__item" href="#!">C# </a><a class="sidebar__item" href="#!">iOS </a><a class="sidebar__item" href="#!">Java </a><a class="sidebar__item" href="#!">JavaScript </a><a class="sidebar__item" href="#!">jQuery </a><a class="sidebar__item" href="#!">SQL </a><a class="sidebar__item" href="#!">Perl </a><a class="sidebar__item" href="#!">PHP </a><a class="sidebar__item" href="#!">Python </a><a class="sidebar__item" href="#!">Веб-дизайн </a><a class="sidebar__item" href="#!">Верстка, CSS, HTML, SVG </a><a class="sidebar__item" href="#!">Системное администрирование </a><a class="sidebar__item" href="#!">Другие языки и технологии </a></div>
+                    </aside>
+          <div class="content"> 
+            <div class="content__header"> 
+              <h2 class="content__subtitle">Программирование </h2>
+              <h1 class="content__title">C/C++</h1>
+              <form class="content__search" action="">
+                <input class="content__search-input" type="text" placeholder="Задайте свой вопрос здесь">
+                <button class="content__search-btn" type="submit">Задать вопрос</button>
+              </form>
+              <div class="content__filter"> <a class="content__filter-item" href="#!">Открытые </a><a class="content__filter-item" href="#!">На голосовании </a><a class="content__filter-item" href="#!">Лучшие</a><a class="content__filter-item" href="#!">Решенные </a></div>
+            </div>
+            <div class="content__body"> </div>
+          </div>
+                    <aside class="banners"> 
+                      <p>banners </p>
+                    </aside>
+        </div>
+      </main>
             <footer class="footer">  
               <div class="footer__body container">
                 <p>footer</p>
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220331213134"> </script>
+    <script src="js/app.min.js?_v=20220402000253"> </script>
   </body>
 </html>

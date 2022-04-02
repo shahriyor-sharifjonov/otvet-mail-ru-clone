@@ -163,6 +163,7 @@
         background: var(--dark);
         color: var(--gray);
         padding-top: 56px;
+        overflow-y: auto;
         @include media(992){
             display: flex;
         }
@@ -171,8 +172,40 @@
         }
         &-body{
             padding: 0;
+            height: max-content;
             display: flex;
             flex-direction: column;
+        }
+        &-search{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 12px;
+            border-bottom: 1px solid rgba(0,0,0,.24);
+            padding: 0 16px;
+            padding-right: 0;
+            height: 38px;
+            &-btn{
+                width: 13px;
+                height: 13px;
+                svg{
+                    fill: var(--gray);
+                }
+            }
+            &-input{
+                padding: 8px 0;
+                background: transparent;
+                border: none;
+                flex: 1 1 auto;
+                padding-right: 16px;
+                color: var(--gray);
+                height: 100%;
+                border-bottom: 2px solid transparent;
+                transition: border 300ms ease-out;
+                &:focus{
+                    border-bottom: 2px solid var(--primary-color);
+                }
+            }
         }
         &-link{
             padding: 8px 15px;
@@ -253,6 +286,11 @@
             }
             svg{
                 min-width: 21px;
+            }
+            img{
+                width: 28px;
+                min-width: 28px;
+                height: 28px;
             }
         }
     }

@@ -40,8 +40,12 @@ mixin header()
         .header__menu 
             .header__menu-body.container 
                 a(href="/").header__menu-link Все вопросы 
-                a(href="/").header__menu-link Лидеры проекта
-                p.header__menu-title Категории
+                a(href="/").header__menu-link Лидеры проекта 
+                p.header__menu-title Категории 
+                form(action="").header__menu-search 
+                    button(type="submit").header__menu-search-btn 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M10.91 12.806A6.964 6.964 0 017 14c-3.863 0-7-3.137-7-7s3.137-7 7-7 7 3.137 7 7a6.97 6.97 0 01-1.18 3.889l2.114 2.113a1.354 1.354 0 01-1.914 1.914l-2.11-2.11zM7 2.477A4.524 4.524 0 0111.523 7 4.524 4.524 0 017 11.523 4.524 4.524 0 012.477 7 4.524 4.524 0 017 2.477z"></path></svg>
+                    input(type="text" placeholder="Поиск категорий").header__menu-search-input 
                 .header__accordion.accordion 
                     .accordion__button.header__accordion-button 
                         .header__accordion-button-left 

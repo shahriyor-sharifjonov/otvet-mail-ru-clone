@@ -1,1 +1,46 @@
-// Сайдбар
+.sidebar{
+    width: 280px;
+    padding-right: 20px;
+    @include media(992){
+        display: none;
+    }
+    &__title{
+        color: var(--dark);
+        font-size: 20px;
+        padding: 0 0 10px 0;
+        display: flex;
+        line-height: 28px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;
+        margin-bottom: 40px;
+    }
+    &__item{
+        display: flex;
+        border-radius: 4px; 
+        padding: 8px 8px 8px 20px;
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--dark);
+        transition: 300ms ease-out;
+        &.active{
+            background: rgba(0,16,61,.08);
+            font-weight: 700;
+        }
+        &:hover{
+            background: rgba(0,16,61,.08);
+        }
+    }
+}
+.banners{
+    width: 280px;
+    padding-left: 20px;
+    @include media(1200){
+        display: none;
+    }
+}
