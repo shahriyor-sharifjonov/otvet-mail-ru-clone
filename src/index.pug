@@ -14,118 +14,119 @@ html(lang="en")
                 .main__body.container
                     include components/sidebar
                     +sidebar 
-                    .content 
-                        .content__header 
-                            h2.content__subtitle Программирование 
-                            h1.content__title C/C++
-                            form(action="").content__search
-                                input(type="text" placeholder="Задайте свой вопрос здесь").content__search-input
-                                button(type="submit").content__search-btn.lg Задать вопрос
-                                button(type="submit").content__search-btn.sm 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="nBqR1"><path fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"></path></svg>
-                            .content__filter 
-                                .content__filter-wrap
-                                    a(href="#!").content__filter-item.active Открытые 
-                                    a(href="#!").content__filter-item На голосовании 
-                                    a(href="#!").content__filter-item Лучшие
-                                    a(href="#!").content__filter-item Решенные 
-                        .content__body 
-                            .content__item-wrap
-                                .content__item.lg
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-img 
-                                        span D
-                                    .content__item-content
-                                        a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
-                                        .content__item-row 
-                                            a(href="#!") Абдурахмон Гозиев,&nbsp;
-                                            span 5 минут назад, в &nbsp;
-                                            a(href="#!").mr "Python"
-                                            a(href="article.html").content__item-link  
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span Ответить
-                                .content__item.sm 
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-content
-                                        .content__item-header 
-                                            .content__item-img 
-                                                span D 
-                                            .content__item-info
-                                                a(href="#!").content__item-name oxygen
-                                                p.content__item-date 36 минут назад 
-                                        a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
-                                        a(href="#!").content__item-sb 
-                                            p.content__item-category Веб-дизайн 
-                                            .content__item-link 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span 0
-                            .content__item-wrap
-                                .content__item.lg
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-img 
-                                        span D
-                                    .content__item-content
-                                        a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
-                                        .content__item-row 
-                                            a(href="#!") Абдурахмон Гозиев,&nbsp;
-                                            span 5 минут назад, в &nbsp;
-                                            a(href="#!").mr "Python"
-                                            a(href="article.html").content__item-link  
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span Ответить
-                                .content__item.sm 
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-content
-                                        .content__item-header 
-                                            .content__item-img 
-                                                span D 
-                                            .content__item-info
-                                                a(href="#!").content__item-name oxygen
-                                                p.content__item-date 36 минут назад 
-                                        a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
-                                        a(href="#!").content__item-sb 
-                                            p.content__item-category Веб-дизайн 
-                                            .content__item-link 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span 0
-                            .content__item-wrap
-                                .content__item.lg
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-img 
-                                        span D
-                                    .content__item-content
-                                        a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
-                                        .content__item-row 
-                                            a(href="#!") Абдурахмон Гозиев,&nbsp;
-                                            span 5 минут назад, в &nbsp;
-                                            a(href="#!").mr "Python"
-                                            a(href="article.html").content__item-link  
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span Ответить
-                                .content__item.sm 
-                                    button(type='button').content__item-btn 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
-                                    .content__item-content
-                                        .content__item-header 
-                                            .content__item-img 
-                                                span D 
-                                            .content__item-info
-                                                a(href="#!").content__item-name oxygen
-                                                p.content__item-date 36 минут назад 
-                                        a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
-                                        a(href="#!").content__item-sb 
-                                            p.content__item-category Веб-дизайн 
-                                            .content__item-link 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span 0
-                            a(href="#!").content__more 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="QqUKV"><path fill-rule="evenodd" d="M7 9.586V3.949a1 1 0 012 0v5.637l1.344-1.344a1 1 0 011.414 1.414l-3.039 3.04a.997.997 0 01-1.438 0l-3.039-3.04a1 1 0 011.414-1.414L7 9.586z"></path></svg>
-                                span Показать еще
+                    .mid
+                        .content 
+                            .content__header 
+                                h2.content__subtitle Программирование 
+                                h1.content__title C/C++
+                                form(action="").content__search
+                                    input(type="text" placeholder="Задайте свой вопрос здесь").content__search-input
+                                    button(type="submit").content__search-btn.lg Задать вопрос
+                                    button(type="submit").content__search-btn.sm 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="nBqR1"><path fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"></path></svg>
+                                .content__filter 
+                                    .content__filter-wrap
+                                        a(href="#!").content__filter-item.active Открытые 
+                                        a(href="#!").content__filter-item На голосовании 
+                                        a(href="#!").content__filter-item Лучшие
+                                        a(href="#!").content__filter-item Решенные 
+                            .content__body 
+                                .content__item-wrap
+                                    .content__item.lg
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-img 
+                                            span D
+                                        .content__item-content
+                                            a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
+                                            .content__item-row 
+                                                a(href="#!") Абдурахмон Гозиев,&nbsp;
+                                                span 5 минут назад, в &nbsp;
+                                                a(href="#!").mr "Python"
+                                                a(href="article.html").content__item-link  
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span Ответить
+                                    .content__item.sm 
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-content
+                                            .content__item-header 
+                                                .content__item-img 
+                                                    span D 
+                                                .content__item-info
+                                                    a(href="#!").content__item-name oxygen
+                                                    p.content__item-date 36 минут назад 
+                                            a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
+                                            .content__item-sb 
+                                                a(href="#!").content__item-category Веб-дизайн 
+                                                a(href="#!").content__item-link 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span 0
+                                .content__item-wrap
+                                    .content__item.lg
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-img 
+                                            span D
+                                        .content__item-content
+                                            a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
+                                            .content__item-row 
+                                                a(href="#!") Абдурахмон Гозиев,&nbsp;
+                                                span 5 минут назад, в &nbsp;
+                                                a(href="#!").mr "Python"
+                                                a(href="article.html").content__item-link  
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span Ответить
+                                    .content__item.sm 
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-content
+                                            .content__item-header 
+                                                .content__item-img 
+                                                    span D 
+                                                .content__item-info
+                                                    a(href="#!").content__item-name oxygen
+                                                    p.content__item-date 36 минут назад 
+                                            a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
+                                            .content__item-sb 
+                                                a(href="#!").content__item-category Веб-дизайн 
+                                                a(href="#!").content__item-link 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span 0
+                                .content__item-wrap
+                                    .content__item.lg
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-img 
+                                            span D
+                                        .content__item-content
+                                            a(href="article.html").content__item-title Из 4-х списков преобразовать двумерный список
+                                            .content__item-row 
+                                                a(href="#!") Абдурахмон Гозиев,&nbsp;
+                                                span 5 минут назад, в &nbsp;
+                                                a(href="#!").mr "Python"
+                                                a(href="article.html").content__item-link  
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span Ответить
+                                    .content__item.sm 
+                                        button(type='button').content__item-btn 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+                                        .content__item-content
+                                            .content__item-header 
+                                                .content__item-img 
+                                                    span D 
+                                                .content__item-info
+                                                    a(href="#!").content__item-name oxygen
+                                                    p.content__item-date 36 минут назад 
+                                            a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
+                                            .content__item-sb 
+                                                a(href="#!").content__item-category Веб-дизайн 
+                                                a(href="#!").content__item-link 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                                                    span 0 
+                                a(href="#!").content__more 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="QqUKV"><path fill-rule="evenodd" d="M7 9.586V3.949a1 1 0 012 0v5.637l1.344-1.344a1 1 0 011.414 1.414l-3.039 3.04a.997.997 0 01-1.438 0l-3.039-3.04a1 1 0 011.414-1.414L7 9.586z"></path></svg>
+                                    span Показать еще 
                     include components/banners 
                     +banners 
         script(src="js/app.min.js") 
