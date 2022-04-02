@@ -326,6 +326,16 @@ ul{
             line-height: 20px;
         }
     }
+    &__form{
+        padding-bottom: 22px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &-img{
+            width: 48px;
+            height: 48px;
+        }
+    }
 }
 
 .similar{

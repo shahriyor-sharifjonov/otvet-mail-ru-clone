@@ -1030,6 +1030,24 @@ ul {
   line-height: 20px;
 }
 
+.content__form {
+  padding-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.content__form-img {
+  width: 48px;
+  height: 48px;
+}
+
 .similar .content__item {
   padding-left: 0;
 }
