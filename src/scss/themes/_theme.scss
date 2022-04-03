@@ -51,14 +51,9 @@ ul{
 .mid{
     display: flex;
     flex-direction: column;
-    width: calc(100% - 280px - 280px);
+    flex: 1 1 auto;
     row-gap: 12px;
-    @include media(1200){
-        width: calc(100% - 280px);
-    }
-    @include media(992){
-        width: 100%;
-    }
+    max-width: 800px;
     @include media(576){
         width: calc(100% + 30px);
         min-width: calc(100% + 30px);
@@ -130,6 +125,9 @@ ul{
             flex: 1 1 auto;
             border: none;
             padding: 8px 12px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
         }
         &-btn{
             background: var(--primary-color);

@@ -24,6 +24,7 @@
         justify-content: space-between;
         height: 100%;
         column-gap: 20px;
+        padding: 0 35px 0 54px;
         @include media(576){
             column-gap: 10px;
         }
@@ -116,7 +117,7 @@
             display: block;
         }
         &.open{
-        .header__button-line,
+            .header__button-line,
             &::before{
                 top: 50%;
                 left: 50%;
@@ -223,6 +224,31 @@
             margin-top: 12px;
             color: #fff;
             border-bottom: 1px solid #fff;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 10px;
+        flex: 1 1 auto;
+    }
+    &__seperator{
+        position: relative;
+        display: inline-block;
+        height: 56px;
+        width: 1px;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: top;
+        text-align: left;
+        div{
+            display: inline-block;
+            height: 56px;
+            width: 1px;
+            vertical-align: middle;
+            background: linear-gradient(0,rgba(0,91,209,0) 0%,#005bd1 50%,#005bd1 50%,rgba(0,91,209,0) 100%);
         }
     }
     &__accordion{

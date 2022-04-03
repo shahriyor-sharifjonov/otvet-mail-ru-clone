@@ -1,19 +1,19 @@
 .sidebar{
     width: 280px;
-    padding-right: 20px;
+    padding: 0 20px;
     @include media(992){
         display: none;
     }
     &__title{
         color: var(--dark);
         font-size: 20px;
-        padding: 0 0 10px 0;
         display: flex;
         line-height: 28px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         fill: #bfc1c7;
+        margin: 0 0 12px 20px;
         svg{
             margin-left: 8px;
         }
@@ -64,7 +64,7 @@
 }
 .banners{
     width: 280px;
-    padding-left: 20px;
+    padding: 0 20px;
     @include media(1200){
         display: none;
     }
