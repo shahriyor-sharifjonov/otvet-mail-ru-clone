@@ -129,6 +129,19 @@ html(lang="en")
                                 +similarAnswer 
                                 +similarAnswer 
                                 +similarAnswer 
+                                a(href="#!").content__more.similar
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="QqUKV"><path fill-rule="evenodd" d="M7 9.586V3.949a1 1 0 012 0v5.637l1.344-1.344a1 1 0 011.414 1.414l-3.039 3.04a.997.997 0 01-1.438 0l-3.039-3.04a1 1 0 011.414-1.414L7 9.586z"></path></svg>
+                                    span Показать еще 
+                        .content.find 
+                            p.find__p Не нашли то, что искали?
+                            a(href="#!").find__btn Задайте свой вопрос
+                        .find.sm 
+                            p.find__title Задать вопрос 
+                            form(action="#!").find__form
+                                input(type="text" placeholder="Задайте свой вопрос здесь").find__input
+                                button(type="submit").find__btn 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="nBqR1"><path fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"></path></svg>
+                            p.find__span 731 491 924 ответа на любой вопрос
                     include components/banners 
                     +banners 
         script(src="js/app.min.js") 
