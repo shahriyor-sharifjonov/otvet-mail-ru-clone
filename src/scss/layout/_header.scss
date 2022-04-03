@@ -25,6 +25,9 @@
         height: 100%;
         column-gap: 20px;
         padding: 0 35px 0 54px;
+        @include media(992){
+            padding: 0 15px;
+        }
         @include media(576){
             column-gap: 10px;
         }
@@ -232,6 +235,9 @@
         justify-content: flex-end;
         column-gap: 10px;
         flex: 1 1 auto;
+        @include media(992){
+            display: none;
+        }
     }
     &__seperator{
         position: relative;

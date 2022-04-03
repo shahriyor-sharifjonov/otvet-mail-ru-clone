@@ -121,6 +121,7 @@ ul{
         border-radius: 4px;
         overflow: hidden;
         border: 1px solid var(--primary-color);
+        height: 43px;
         &-input{
             flex: 1 1 auto;
             border: none;
@@ -128,12 +129,18 @@ ul{
             font-size: 15px;
             font-weight: 400;
             line-height: 20px;
+            &::placeholder{
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+            }
         }
         &-btn{
             background: var(--primary-color);
             color: var(--secondary-bg);
             padding: 10px;
             transition: 300ms ease-out;
+            font-size: 15px;
             &.lg{
                 @include media(576){
                     display: none;

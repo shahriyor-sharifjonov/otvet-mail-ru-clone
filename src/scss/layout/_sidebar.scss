@@ -46,6 +46,11 @@
             height: 48px;
             border-radius: 50%;
             line-height: 0;
+            &.sm{
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+            }
         }
         small{
             font-size: 13px;
