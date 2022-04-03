@@ -10,6 +10,13 @@
         padding: 0 0 10px 0;
         display: flex;
         line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        fill: #bfc1c7;
+        svg{
+            margin-left: 8px;
+        }
         &:hover{
             text-decoration: underline;
         }
@@ -22,12 +29,30 @@
     }
     &__item{
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         border-radius: 4px; 
         padding: 8px 8px 8px 20px;
         font-size: 15px;
         line-height: 20px;
         color: var(--dark);
         transition: 300ms ease-out;
+        column-gap: 12px;
+        picture{
+            line-height: 0;
+        }
+        img{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            line-height: 0;
+        }
+        small{
+            font-size: 13px;
+            color: #919399;
+            font-weight: 400;
+            line-height: 20px;
+        }
         &.active{
             background: rgba(0,16,61,.08);
             font-weight: 700;

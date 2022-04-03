@@ -508,6 +508,18 @@
   display: -ms-flexbox;
   display: flex;
   line-height: 28px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  fill: #bfc1c7;
+}
+
+.sidebar__title svg {
+  margin-left: 8px;
 }
 
 .sidebar__title:hover {
@@ -530,6 +542,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 4px;
   padding: 8px 8px 8px 20px;
   font-size: 15px;
@@ -538,6 +556,27 @@
   -webkit-transition: 300ms ease-out;
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.sidebar__item picture {
+  line-height: 0;
+}
+
+.sidebar__item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.sidebar__item small {
+  font-size: 13px;
+  color: #919399;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .sidebar__item.active {
@@ -1440,6 +1479,7 @@ ul {
   font-size: 13px;
   color: #919399;
   line-height: 20px;
+  padding-right: 8px;
 }
 
 .answer__name a {
