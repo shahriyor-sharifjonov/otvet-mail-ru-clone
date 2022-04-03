@@ -1,3 +1,98 @@
+mixin similarAnswer()
+    .content__item-wrap
+        .content__item 
+            .content__item-img 
+                span D
+            .content__item-content
+                .content__item-row 
+                    a(href="#!") roma shs в
+                    span «Другие языки и технологии»
+                    span 6 лет назад
+                a(href="article.html").content__item-title.similar #[b Проблема] в задаче по #[b c++]. Динамическая память. Среда #[b Builder]  XE8
+                a(href="article.html").content__item-button
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                    span.dark 1 
+                    span.dn Ответить
+
+mixin contentItem()
+    .content__item-wrap
+        .content__item.p0.b-none   
+            button(type='button').content__item-btn 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+            .content__item-img.dn 
+                span D
+            .content__item-content
+                .content__item-top.sm 
+                    a(href="#!").content__item-top-category C/C++ 
+                    .content__item-top-info 
+                        .content__item-img 
+                            span D
+                        .content__item-top-div 
+                            a(href="#!").content__item-top-name NANI?
+                            span.content__item-top-p открыт 4 дня назад
+                .content__item-row.dn 
+                    a(href="#!") #[b roma shs в]
+                    a(href="#!") , открыт 4 дня назад
+                p.content__item-title.large C++ Builder вопрос про Memo
+                p.content__item-detail.sm Как вывести несколько данных в одну строку например:#[br]char name[30];#[br]int num, price;#[br]date d;#[br]Допустим они в массиве ar[]. Хочу типо вот так:#[br]Memo->Lines->Add("Название товара "+ar[i].name+"Цена "+ar[i].price ...т.д.).#[br]Я не знаю синтаксис.
+                .content__action 
+                    .content__action-left
+                        button(type="submit").content__form-button.lg 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="DY2o8"><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                            span Ответить 
+                        button(type='button').content__action-btn 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M7.125 14.998c-.003 0-1.516.026-2.28-.635-.825-.714-.845-1.99-.845-1.99V8.961s-.003-1.885.754-2.756c.757-.872 2.431-1.886 2.96-2.614.529-.729.834-1.722 1.672-1.722.837 0 1.239.521 1.239 1.311 0 .377-.349 1.144-.349 2.193 0 .408.34.625.893.625H13c1.263 0 2 .771 2 2 0 .653-.359 1.223-.889 1.524a1.751 1.751 0 01-.876 1.75 1.751 1.751 0 01-.875 1.75 1.75 1.75 0 01-1.735 1.976h-3.5zM3 7.56c0-.724-.276-1.312-1-1.312S1 6.836 1 7.56v6.125c0 .725.276 1.313 1 1.313s1-.588 1-1.313V7.56z"></path></svg>
+                    .content__action-right
+                        button(type='button').content__action-btn 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="QKbwC"><path fill-rule="evenodd" d="M13 2.779C13 1.796 12.204 1 11.221 1H4.779C3.796 1 3 1.796 3 2.779v11.192a1 1 0 001.746.667l2.793-3.123a.618.618 0 01.922 0l2.793 3.123A1.001 1.001 0 0013 13.971V2.779zm-2 .82a.6.6 0 00-.601-.601H5.607A.608.608 0 005 3.606v7.272a.232.232 0 00.402.158l2.146-2.292a.619.619 0 01.904 0l2.151 2.298a.23.23 0 10.397-.157V3.599z"></path></svg>
+                        button(type='button').content__action-btn 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8.88 3.37a.3.3 0 00.122-.252A3.001 3.001 0 0115 3a3.001 3.001 0 01-4.951 2.278.292.292 0 00-.366-.017c-.564.407-2.189 1.588-2.649 1.922a.233.233 0 00-.09.234 3.098 3.098 0 01-.001 1.166.234.234 0 00.091.234l2.648 1.924a.295.295 0 00.368-.018A2.978 2.978 0 0112 10a3.001 3.001 0 010 6 3.001 3.001 0 01-2.998-3.118.295.295 0 00-.122-.251l-2.896-2.105a.315.315 0 00-.358-.007A2.968 2.968 0 014 11a3.001 3.001 0 010-6c.599 0 1.158.176 1.627.48.108.072.25.069.355-.007.58-.419 2.392-1.736 2.898-2.103z"></path></svg>
+                    button(type="submit").content__form-button.sm 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="DY2o8"><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                        span Ответить на вопрос
+
+mixin form()
+    form(action="").content__form 
+        .content__form-img 
+        .content__form-right
+            .content__form-body
+                textarea(placeholder="Введите текст ответа")
+                .content__form-buttons
+                    button(type='button').content__form-btn 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" class="G0ycx"><path fill-rule="evenodd" d="M13 1a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2h10zm-1.274 12c.514 0 .932-.373.932-.833a.77.77 0 00-.133-.43l-.014-.02-1.883-3.294c-.16-.253-.386-.52-.811-.52-.437 0-.659.272-.817.53l-1.426 1.966-.862-.91C6.504 9.269 6.343 9 5.929 9c-.414 0-.614.297-.816.538l-1.631 2.19a.762.762 0 00-.14.439c0 .46.418.833.932.833h7.452zM5.5 3a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 015.5 3z"></path></svg>
+                        span Фото
+                    button(type='button').content__form-btn 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" class="G0ycx"><path fill-rule="evenodd" d="M13.2 2c.993 0 1.8.807 1.8 1.8v8.4c0 .993-.807 1.8-1.8 1.8H1.8C.807 14 0 13.193 0 12.2V3.8C0 2.807.807 2 1.8 2h11.4zM10 12V8H5v4h5zm-7-1.5a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm-10-3a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zM10 6V4H5v2h5zM3 4.5a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1z"></path></svg>
+                        span Видео
+            .content__form-bot 
+                button(type="submit").content__form-button 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="DY2o8"><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                    span Ответить 
+                .content__form-div 
+                    span Нажимая на кнопку, вы принимаете условия 
+                    a(href="#!") пользовательского соглашения 
+
+mixin answer()
+    .answer 
+        button(type='button').content__item-btn 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M8 11.365a1.817 1.817 0 010 3.632 1.817 1.817 0 010-3.632zm0-5.191a1.826 1.826 0 010 3.65 1.826 1.826 0 010-3.65zm0-5.171a1.81 1.81 0 11-.001 3.617A1.81 1.81 0 018 1.003z"></path></svg>
+        .answer__header 
+            .content__item-img.large
+                span D
+            span.answer__name #[a(href="#!") фигня какая-та], 4 дня назад #[br] Профи
+        p.answer__detail Nani??
+        .answer__action 
+            button(type='button').answer__btn 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="qWxAZ YJAqn"><path fill-rule="evenodd" d="M7.125 14.998c-.003 0-1.516.026-2.28-.635-.825-.714-.845-1.99-.845-1.99V8.961s-.003-1.885.754-2.756c.757-.872 2.431-1.886 2.96-2.614.529-.729.834-1.722 1.672-1.722.837 0 1.239.521 1.239 1.311 0 .377-.349 1.144-.349 2.193 0 .408.34.625.893.625H13c1.263 0 2 .771 2 2 0 .653-.359 1.223-.889 1.524a1.751 1.751 0 01-.876 1.75 1.751 1.751 0 01-.875 1.75 1.75 1.75 0 01-1.735 1.976h-3.5zM3 7.56c0-.724-.276-1.312-1-1.312S1 6.836 1 7.56v6.125c0 .725.276 1.313 1 1.313s1-.588 1-1.313V7.56z"></path></svg>
+                | Нравится
+            button(type='button').answer__btn 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="qPhqc"><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
+                span 0 
+                | комментария
+        
+
+
+
 doctype html
 html(lang="en")
     head
@@ -15,62 +110,25 @@ html(lang="en")
                     include components/sidebar
                     +sidebar 
                     .mid
-                        .content 
+                        .content.similar
                             .content__header.bb-none 
-                                h2.content__subtitle Программирование 
-                                h1.content__title C/C++
-                                form(action="").content__search
-                                    input(type="text" placeholder="Задайте свой вопрос здесь").content__search-input
-                                    button(type="submit").content__search-btn.lg Задать вопрос
-                                    button(type="submit").content__search-btn.sm 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="nBqR1"><path fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"></path></svg>
-                                .content__filter 
-                                    .content__filter-wrap
-                                        a(href="#!").content__filter-item.active Открытые 
-                                        a(href="#!").content__filter-item На голосовании 
-                                        a(href="#!").content__filter-item Лучшие
-                                        a(href="#!").content__filter-item Решенные 
+                                +contentItem 
                         .content 
                             .content__header.bb-none
                                 p.content__title.dn Ответить на вопрос
-                                form(action="").content__form 
-                                    .content__form-img 
-                                        span D
-                                    .content__form-right
-                                        .content__form-body
-                                            textarea(placeholder="Введите текст ответа")
-                                            .content__form-buttons
-                                                button(type='button').content__form-btn 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" class="G0ycx"><path fill-rule="evenodd" d="M13 1a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2h10zm-1.274 12c.514 0 .932-.373.932-.833a.77.77 0 00-.133-.43l-.014-.02-1.883-3.294c-.16-.253-.386-.52-.811-.52-.437 0-.659.272-.817.53l-1.426 1.966-.862-.91C6.504 9.269 6.343 9 5.929 9c-.414 0-.614.297-.816.538l-1.631 2.19a.762.762 0 00-.14.439c0 .46.418.833.932.833h7.452zM5.5 3a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 015.5 3z"></path></svg>
-                                                    span Фото
-                                                button(type='button').content__form-btn 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" class="G0ycx"><path fill-rule="evenodd" d="M13.2 2c.993 0 1.8.807 1.8 1.8v8.4c0 .993-.807 1.8-1.8 1.8H1.8C.807 14 0 13.193 0 12.2V3.8C0 2.807.807 2 1.8 2h11.4zM10 12V8H5v4h5zm-7-1.5a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm-10-3a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zM10 6V4H5v2h5zM3 4.5a.5.5 0 00-1 0v1a.5.5 0 001 0v-1zm10 0a.5.5 0 00-1 0v1a.5.5 0 001 0v-1z"></path></svg>
-                                                    span Видео
-                                        .content__form-bot 
-                                            button(type="submit").content__form-button 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="DY2o8"><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                span Ответить 
-                                            .content__form-div 
-                                                span Нажимая на кнопку, вы принимаете условия 
-                                                a(href="#!") пользовательского соглашения 
-                        .content 
+                                +form 
+                        .content
+                            .content__header.bb-none.answer-wrapper 
+                                a(href="#!").content__title.mb0.answer-title 1 ответ 
+                                +answer
+                        .content.similar 
                             .content__header.bb-none 
-                                a(href="#!").content__title.mb0 Похожие вопросы 
-                                .content__item-wrap.similar
-                                    .content__item
-                                        .content__item-content
-                                            .content__item-header 
-                                                .content__item-img 
-                                                    span D 
-                                                .content__item-info
-                                                    a(href="#!").content__item-name oxygen
-                                                    p.content__item-date 36 минут назад 
-                                            a(href="article.html").content__item-detail Pycharm ,python помогите пожалуйста
-                                            .content__item-sb 
-                                                a(href="#!").content__item-category Веб-дизайн 
-                                                a(href="#!").content__item-link 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path fill-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z"></path></svg>
-                                                    span 0
+                                a(href="#!").content__title.mb0.w-svg Похожие вопросы 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class=""><path d="M5.809 12.771A1.128 1.128 0 014 11.872V4.128a1.128 1.128 0 011.809-.899l5.233 3.865.001.001a1.124 1.124 0 010 1.81l-.001.001-5.233 3.865z"></path></svg>
+                                +similarAnswer 
+                                +similarAnswer 
+                                +similarAnswer 
+                                +similarAnswer 
                     include components/banners 
                     +banners 
         script(src="js/app.min.js") 
