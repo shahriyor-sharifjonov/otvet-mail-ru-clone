@@ -66,8 +66,6 @@
 }
 
 .header {
-  line-height: 18px;
-  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +76,6 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: var(--primary-color);
-  color: var(--secondary-bg);
   position: fixed;
   top: 0;
   left: 0;
@@ -175,6 +172,7 @@
 
 .header__li {
   height: 100%;
+  position: relative;
 }
 
 .header__link {
@@ -196,6 +194,23 @@
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
   background-color: var(--primary-color);
+  line-height: 18px;
+  font-size: 15px;
+  color: var(--secondary-bg);
+}
+
+.header__link.active {
+  background: var(--secondary-bg) !important;
+  color: var(--dark);
+}
+
+.header__link.active .icon {
+  background: url("../img/icons.webp") no-repeat -1922px 0;
+  background-size: 3379px 21px !important;
+}
+
+.header__link * {
+  pointer-events: none;
 }
 
 .header__link:hover {
@@ -534,6 +549,52 @@
   width: 28px;
   min-width: 28px;
   height: 28px;
+}
+
+.drop.active ~ .drop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drop__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  max-width: 750px;
+  width: 750px;
+  background: var(--secondary-bg);
+  -webkit-box-shadow: 0 4px 32px rgba(0, 0, 0, 0.32) !important;
+          box-shadow: 0 4px 32px rgba(0, 0, 0, 0.32) !important;
+}
+
+.drop__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drop__link {
+  color: #333;
+  line-height: 19px;
+  font-size: 15px;
+  padding: 10px 25px 11px 10px;
+}
+
+.drop__link:hover {
+  background: var(--primary-bg);
+}
+
+.drop__link.border {
+  border-bottom: 1px solid rgba(0, 16, 61, 0.08);
+}
+
+.drop__link.strong {
+  font-weight: 700;
 }
 
 .sidebar {
@@ -920,6 +981,7 @@ ul {
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
   font-size: 15px;
+  line-height: 21px;
 }
 
 .content__search-btn.sm {
@@ -1732,6 +1794,13 @@ ul {
           justify-content: center;
   width: 100%;
   border-bottom: 1px solid var(--border);
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.new:hover {
+  background: rgba(13, 194, 104, 0.18);
 }
 
 .new__p {

@@ -45,3 +45,17 @@ $(document).ready(function() {
         }
     });
 });
+
+document.querySelector('.drop').addEventListener('click', e => {
+  e.target.classList.toggle('active');
+})
+document.addEventListener('click', e => {
+  if(document.querySelector('.drop.active') && !e.composedPath().includes(document.querySelector('.drop-container')) && !e.composedPath().includes(document.querySelector('.drop-container'))){
+    document.querySelector('.drop.active').classList.remove('active');
+  }
+})
+document.querySelectorAll('.drop__link').forEach(el => {
+  el.addEventListener('click', ( ) => {
+    el.parentElement.parentElement.previousElementSibling.classList.remove('active');
+  })
+})

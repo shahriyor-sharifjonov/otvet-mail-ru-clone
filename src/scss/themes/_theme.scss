@@ -141,6 +141,7 @@ ul{
             padding: 10px;
             transition: 300ms ease-out;
             font-size: 15px;
+            line-height: 21px;
             &.lg{
                 @include media(576){
                     display: none;
@@ -835,6 +836,10 @@ ul{
     justify-content: center;
     width: 100%;
     border-bottom: 1px solid var(--border);
+    transition: 300ms ease-out;
+    &:hover{
+        background: rgba(13,194,104,.18);
+    }
     &__p{
         display: flex;
         justify-content: center;
