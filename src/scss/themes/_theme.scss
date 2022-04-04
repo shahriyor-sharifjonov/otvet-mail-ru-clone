@@ -10,13 +10,16 @@
         outline: none;
     }
 }
+
 html,
 body{
     height: 100%;
 }
+
 body{
     background-color: var(--primary-bg);
 }
+
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -36,18 +39,22 @@ body{
         }
     }
 }
+
 button{
     background: none;
     border: none;
     cursor: pointer;
 }
+
 a{
     color: inherit;
     text-decoration: none;
 }
+
 ul{
     list-style-type: none;
 }
+
 .mid{
     display: flex;
     flex-direction: column;
@@ -60,6 +67,7 @@ ul{
         margin-left: -15px;
     }
 }
+
 .content{
     border: 1px solid rgba(0,16,61,.12);
     background: var(--secondary-bg);
@@ -751,7 +759,6 @@ ul{
     }
 }
 
-
 .find{ 
     padding: 20px;
     display: flex;
@@ -828,6 +835,7 @@ ul{
         }
     }
 }
+
 .new{
     padding: 16px 20px;
     background: rgba(13,194,104,.08);
@@ -858,5 +866,58 @@ ul{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.dropdown{
+    &__content{
+        position: absolute;
+        top: calc(100% + 10px);
+        right: -15px;
+        background: #fff;
+        z-index: 20;
+        box-shadow: 0 4px 32px 0 rgb(0 0 0 / 32%);
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+        transition: 300ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            border: 8px solid transparent;
+            border-bottom-color: #fff;
+            height: 0;
+            top: -16px;
+            right: 15px;
+            width: 0;
+        }
+    }
+    &__item{
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 16px;
+        transition: 300ms ease-out;
+        &:hover{
+            background: var(--primary-bg);
+        }
+        svg{
+            fill: #919399;
+        }
+        span{
+            font-size: 15px;
+            color: var(--dark);
+        }
+        &:hover{
+            text-decoration: none !important;
+        }
     }
 }
