@@ -520,6 +520,9 @@ ul{
         align-items: center;
         justify-content: center;
         column-gap: 8px;
+        @include media(768){
+            border-top: 1px solid var(--border);
+        }
         &.similar{
             border-top: 1px solid var(--border);
             width: calc(100% + 60px);
@@ -748,7 +751,7 @@ ul{
 }
 
 
-.find{
+.find{ 
     padding: 20px;
     display: flex;
     align-items: center;
@@ -822,5 +825,33 @@ ul{
         &:hover{
             background: var(--primary-color-hover);
         }
+    }
+}
+.new{
+    padding: 16px 20px;
+    background: rgba(13,194,104,.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    &__p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: var(--dark);
+        font-weight: 400;
+        line-height: 20px;
+    }
+    span{
+        background: #59c354;
+        border-radius: 4px;
+        color: #fff;
+        font-style: normal;
+        padding: 4px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
